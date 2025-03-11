@@ -1,0 +1,105 @@
+/* General Page Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image:url(currencies.webp) ;
+    margin: 0;
+}
+
+/* Container Styling */
+.container {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 320px;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; transform: scale(0.9); }
+    to { opacity: 1; transform: scale(1); }
+}
+
+/* Title */
+h2 {
+    font-size: 22px;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+/* Converter Box */
+.converter-box {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+/* Input Field */
+input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+input:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.3);
+}
+
+/* Dropdowns */
+.dropdowns {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+select, button {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+/* Convert Button */
+#convert {
+    background: #28a745;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#convert:hover {
+    background: #218838;
+    transform: scale(1.05);
+}
+
+/* Swap Button */
+#swap {
+    background: #ffc107;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 20px;
+}
+
+#swap:hover {
+    background: #e0a800;
+    transform: rotate(180deg);
+}
+
+/* Result Styling */
+p {
+    font-size: 18px;
+    font-weight: bold;
+}
